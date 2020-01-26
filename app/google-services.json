@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "260012619538",
+    "firebase_url": "https://paysy-b69bd.firebaseio.com",
+    "project_id": "paysy-b69bd",
+    "storage_bucket": "paysy-b69bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260012619538:android:c0763135bf4c02f1f265cb",
+        "android_client_info": {
+          "package_name": "io.github.padamchopra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260012619538-laa94t5g1hilm8hustlir1mn6rqt1p3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.github.padamchopra",
+            "certificate_hash": "74031f0ee4530498a125f0e45ee7cb43fc9c6453"
+          }
+        },
+        {
+          "client_id": "260012619538-t9tlfbqk6k2nu5ukkunu4rpjefvm7hr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHcHt6FSGP-5UEbGKZ-i_unI7hrGcbWyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260012619538-t9tlfbqk6k2nu5ukkunu4rpjefvm7hr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

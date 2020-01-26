@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F4F4"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DetailedBill">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="Order Receipt"
+        android:textColor="#000"
+        android:fontFamily="@font/productsans_bold"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/restaurant_heading"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsans"
+        android:text="Taco Del Mar"
+        android:textColor="#000"
+        android:textSize="45sp"/>
+    <TextView
+        android:id="@+id/transaction_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction ID "
+        android:layout_below="@id/restaurant_heading"
+        android:fontFamily="@font/productsans"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"/>
+    <LinearLayout
+        android:layout_below="@id/transaction_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ordered_items"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textColor="#000"
+            android:lineHeight="5mm"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/ordered_items_cost"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:textAlignment="textEnd"
+            android:textColor="#000"
+            android:lineHeight="5mm"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:onClick="payTransaction"
+        android:id="@+id/add_button_nachos"
+        android:layout_width="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="@color/green"
+        android:fontFamily="@font/productsans"
+        android:gravity="center_vertical"
+        app:backgroundTint="@color/green"
+        app:strokeWidth="1dp"
+        android:text="PAY >"
+        android:letterSpacing="0"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+
+</RelativeLayout>
